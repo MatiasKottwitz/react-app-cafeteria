@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-color: #F6EBDA;
+}
+.logos .cart{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;
+}
