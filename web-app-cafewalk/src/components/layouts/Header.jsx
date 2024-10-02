@@ -41,11 +41,15 @@ export const Header = ({imgLogo, imgCart }) => {
   )
 }
 
-//Props por defecto.
+Header.PropTypes = {
+    
+}
 
+//Props por defecto.
 Header.defaultProps = {
     imgLogo: logo,
     imgCart: cart
 };
+
 
 export default Header;
