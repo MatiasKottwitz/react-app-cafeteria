@@ -1,16 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import '../layouts/header.css'
+import './header.css'
 import logo from '../../assets/logoCafe.svg'
 import cart from '../../assets/logoCart.svg'
 
-export const Header = ({imgLogo, imgCart }) => {
+export const Header = ({imgLogo, imgCart, logoAlt}) => {
   return (
     <header className="my-header" >
     <div className="nav-container">
         <i className="logos">
-            <img src={imgLogo} alt="" />
+            <img src={imgLogo} alt={logoAlt} />
             <span>Cafe</span>Walk</i>
         <ul className="links" >
             <li className="my-li"><a href="#home"  >Inicio</a></li>
@@ -41,13 +41,11 @@ export const Header = ({imgLogo, imgCart }) => {
   )
 }
 
-Header.PropTypes = {
-    
-}
 
 //Props por defecto.
 Header.defaultProps = {
     imgLogo: logo,
+    logoAlt: "Brand",
     imgCart: cart
 };
 

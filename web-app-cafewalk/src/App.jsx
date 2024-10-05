@@ -1,18 +1,11 @@
 import React from 'react'
-import Header from './components/layouts/Header';
+import Header from './cafeteria/layouts/Header';
+
 
 import './index.css'
 
-const links = [
-  {name: Home, url: "#"},
-  {name: Servicios, url: "#"},
-  {name: Acerca, url: "#"},
-  {name: Menu, url: "#"},
-  {name: Locales, url: "#"},
-  {name: Contacto, url: "#"}
-];
 
-export const App = () => {
+export const CafeWalkApp = () => {
   return (
    <>
     <Header/>
@@ -22,4 +15,4 @@ export const App = () => {
   )
 }
 
-export default App;
+export default CafeWalkApp;
