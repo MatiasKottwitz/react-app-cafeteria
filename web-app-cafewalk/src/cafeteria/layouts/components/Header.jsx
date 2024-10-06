@@ -1,9 +1,9 @@
-import React from 'react'
+import { Link, NavLink } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
 import './header.css'
-import logo from '../../assets/logoCafe.svg'
-import cart from '../../assets/logoCart.svg'
+import logo from '../../../assets/logoCafe.svg'
+import cart from '../../../assets/logoCart.svg'
 
 export const Header = ({imgLogo, imgCart, logoAlt}) => {
   return (
@@ -13,14 +13,15 @@ export const Header = ({imgLogo, imgCart, logoAlt}) => {
             <img src={imgLogo} alt={logoAlt} />
             <span>Cafe</span>Walk</i>
         <ul className="links" >
-            <li className="my-li"><a href="#home"  >Inicio</a></li>
-            <li className="my-li"><a href="#servicios" >Servicios</a></li>
+            <NavLink className="my-li" to="/">Inicio</NavLink>
+            <NavLink className="my-li" to="/menu">Productos</NavLink>
+            {/* <li className="my-li"><a href="#servicios" >Servicios</a></li>
             <li className="my-li"><a href="#acerca" >Acerca de</a></li>
             <li className="my-li"><a href="#menu">Menu</a></li>
             <li className="my-li"><a href="#locales">Locales</a></li>
-            <li className="my-li"><a href="#contacto">Contacto</a></li>
+            <li className="my-li"><a href="#contacto">Contacto</a></li> */}
         </ul>
-            <a href="pages/pedidos.html" className="pedido" >Menu Especial</a>
+        <NavLink className='pedido' to="/pedidos">Pedidos Especiales</NavLink>
             <i className="cart"><img src={imgCart} alt=""/>
             </i>
             <div className="menu">
