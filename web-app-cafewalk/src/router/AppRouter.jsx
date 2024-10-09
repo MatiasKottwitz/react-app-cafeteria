@@ -1,20 +1,17 @@
-import { Navigate, Route, Routes } from "react-router-dom"
-import { HomePage, MenuPage, PedidosPage } from "../cafeteria/pages"
+import { Route, Routes } from "react-router-dom"
 import { Login } from "../auth/pages/Login"
-import { Header } from "../cafeteria/layouts/components"
+import { ClientRoutes } from "../cafeteria"
 
 
 
 export const AppRouter = () => {
   return (
     <>
-         <Header/>
+       
         <Routes>
-            <Route path="/" element={<Navigate to="/home"/>}/>
-            <Route path="home" element={<HomePage/>}/>
-            <Route path="menu" element={<MenuPage/>}/>
-            <Route path="pedidos" element={<PedidosPage/>}/>
-            <Route path="login" element={<Login/>}/>
+            <Route path="login" element={ <Login/> }/>
+
+            <Route path="/*" element={ <ClientRoutes/> }/>
         </Routes>
     </>
   )
