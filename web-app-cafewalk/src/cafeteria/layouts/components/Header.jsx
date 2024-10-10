@@ -15,6 +15,7 @@ export const Header = ({imgLogo, imgCart, logoAlt}) => {
         <ul className="links" >
             <NavLink className="my-li" to="/">Inicio</NavLink>
             <NavLink className="my-li" to="/menu">Productos</NavLink>
+            <NavLink className="my-li" to="/envios">Envios</NavLink>
             {/* <li className="my-li"><a href="#servicios" >Servicios</a></li>
             <li className="my-li"><a href="#acerca" >Acerca de</a></li>
             <li className="my-li"><a href="#menu">Menu</a></li>
@@ -37,7 +38,7 @@ export const Header = ({imgLogo, imgCart, logoAlt}) => {
         <li className="my-li" ><a href="#contacto" className="my-a" >Contacto</a></li>
         <li className="my-li" ><a href="#" className="my-a" >Menu Especial</a></li>
    </div>
-   <script src="JS/menu_resp.js" ></script>
+   {/* <script src="JS/menu_resp.js" ></script> */}
 </header>
   )
 }

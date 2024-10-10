@@ -42,7 +42,7 @@ a:hover{
 /* ul {
     display: flex ;
     gap: 1.2rem;
-    margin-right: 8.2rem; 
+    margin-right: 8.2rem;
 } */
 
 .nav-container .links{
@@ -75,7 +75,7 @@ a:hover{
    color: #2F2105;
    font-size: 1.2rem;
    cursor: pointer;
-   display: none; 
+   display: none;
 }
 
 .bg-img-hero{
@@ -100,7 +100,7 @@ a:hover{
     overflow: hidden;
     transition: height 0.2s ease 0s;
     display: none;
-    
+
 }
 .menu-resp.open{
     height: 340px;
@@ -115,7 +115,7 @@ a:hover{
     width: 100%;
     display: flex;
     justify-content: center;
-    
+
 }
 @media (max-width: 576px){
     .menu-resp{
