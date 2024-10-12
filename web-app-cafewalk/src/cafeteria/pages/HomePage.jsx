@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-import '../pages/HomePage.css'
+import './../../../public/css/HomePage.css'
 import imagenHome from '../../assets/images/home_image.jpg';
 
 export const HomePage = ({homeImage, homeAlt}) => {
