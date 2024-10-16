@@ -18,7 +18,7 @@ export const BannerContainer = ({bannerData}) => {
                 </div>
              </div>
             )) }
-        </div>
+    </div>
    </>
   )
 }

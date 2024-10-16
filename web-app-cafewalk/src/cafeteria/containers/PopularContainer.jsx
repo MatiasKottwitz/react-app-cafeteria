@@ -1,7 +1,15 @@
-import React from 'react'
+import './../../../public/css/popular.css'
+import PopularCards from "./../components/PopularCards"
 
-export const PopularContainer = () => {
+export const PopularContainer = ({popularMenuData}) => {
   return (
-    <div>PopularContainer</div>
+    <div id="popular-section" >
+      <h2>Populares Hoy</h2>
+      <div className="popular-container-background">
+        {popularMenuData.map (popular => (
+          <PopularCards key={popular.id} {...popular} />
+        ))}
+      </div>
+    </div>
   )
 }
