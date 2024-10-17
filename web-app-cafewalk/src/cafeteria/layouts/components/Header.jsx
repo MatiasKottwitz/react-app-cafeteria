@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
-import './header.css'
+
 import logo from '../../../assets/logoCafe.svg'
 import cart from '../../../assets/logoCart.svg'
 

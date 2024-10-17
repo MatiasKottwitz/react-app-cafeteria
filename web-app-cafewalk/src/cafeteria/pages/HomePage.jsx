@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-import './../../../public/css/HomePage.css'
+// import './../../../public/css/HomePage.css'
 import { PopularContainer,BannerContainer } from "../containers";
 import {bannerData, popularMenuData} from './../data/data'
 

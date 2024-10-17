@@ -1,4 +1,4 @@
-import './../../../public/css/HomePage.css'
+// import './../../../public/css/HomePage.css'
 
 
 export const BannerContainer = ({bannerData}) => {
