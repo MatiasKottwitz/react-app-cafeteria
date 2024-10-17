@@ -24,8 +24,28 @@ export const popularMenuData = [{
 {
     id:'3',
     ProductImage: './images/hazelnut_latte.png',
-    imageAlt: 'azelnut Latte',
-    productPopular: 'azelnut Latte',
+    imageAlt: 'Hazelnut Latte',
+    productPopular: 'Hazelnut Latte',
     pricePopular: '$500',
+},
+]
+
+export const servicesData = [{
+    id: '1',
+    serviceImage: './images/service-1.png',
+    serviceTextHead: 'Elige tu cafe Preferido',
+    serviceTextP: 'Tenemos mas de 20 cafes para ti'
+},
+{
+    id: '2',
+    serviceImage: './images/service-2.png',
+    serviceTextHead: 'Te lo enviamos a donde desees',
+    serviceTextP: 'Elije la forma de envio'  
+},
+{
+    id: '3',
+    serviceImage: './images/service-3.png',
+    serviceTextHead: 'Disfruta de tu cafe!',
+    serviceTextP: 'Recibe y disfruta de tu cafe y recomiendanos'  
 }
 ]
