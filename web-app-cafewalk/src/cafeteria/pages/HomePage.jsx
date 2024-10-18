@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 // import './../../../public/css/HomePage.css'
-import { PopularContainer,BannerContainer } from "../containers";
+import { PopularContainer,BannerContainer, ServicesContainer } from "../containers";
 import {bannerData, popularMenuData, servicesData} from './../data/data'
 
 export const HomePage = () => {
@@ -9,7 +9,7 @@ export const HomePage = () => {
     <>  
         <BannerContainer bannerData={bannerData} />
         <PopularContainer popularMenuData={popularMenuData} />
-        {/* <ServicesContainer servicesData={servicesData} /> */}
+        <ServicesContainer servicesData={servicesData} />
     </>
   )
 }

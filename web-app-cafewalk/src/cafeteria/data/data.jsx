@@ -34,17 +34,20 @@ export const servicesData = [{
     id: '1',
     serviceImage: './images/service-1.png',
     serviceTextHead: 'Elige tu cafe Preferido',
+    imageAlt: 'Select Coffee',
     serviceTextP: 'Tenemos mas de 20 cafes para ti'
 },
 {
     id: '2',
     serviceImage: './images/service-2.png',
+    imageAlt: 'Select delivery',
     serviceTextHead: 'Te lo enviamos a donde desees',
     serviceTextP: 'Elije la forma de envio'  
 },
 {
     id: '3',
     serviceImage: './images/service-3.png',
+    imageAlt: 'Enjoy Coffee',
     serviceTextHead: 'Disfruta de tu cafe!',
     serviceTextP: 'Recibe y disfruta de tu cafe y recomiendanos'  
 }

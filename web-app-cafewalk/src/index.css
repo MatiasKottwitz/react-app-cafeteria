@@ -539,7 +539,8 @@ input[type=radio]:checked + .off-label + .selected {
 .services-container{ 
   margin-left: 8%;
   margin-right: auto;
-  padding-right: 3%;
+  padding-right:11%;
+  
 }
 .service{
   display: flex;
@@ -559,6 +560,7 @@ input[type=radio]:checked + .off-label + .selected {
   flex-direction: column;
   gap: 17px;
   align-items: center;
+  width: 280px;
 }
 
 
