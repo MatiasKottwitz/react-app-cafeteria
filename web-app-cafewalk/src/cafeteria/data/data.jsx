@@ -50,5 +50,15 @@ export const servicesData = [{
     imageAlt: 'Enjoy Coffee',
     serviceTextHead: 'Disfruta de tu cafe!',
     serviceTextP: 'Recibe y disfruta de tu cafe y recomiendanos'  
-}
+},
 ]
+
+export const aboutData = [{
+    id: '1',
+    aboutImage: './images/img-acerca.png',
+    aboutUs: 'Acerca de Nosotros',
+    aboutAlt:'Imagen Acerca',
+    aboutInfoP: 'En nuestra cafetería, nos apasiona ofrecerte sabores y aromas exquisitos en cada taza, placer en cada sorbo y amor en cada bocado. Disfruta de nuestra calidad excepcional en cada visita.',
+    btnData: 'Obten Tu Cafe',
+    btnClass: 'btn-acerca'
+}]

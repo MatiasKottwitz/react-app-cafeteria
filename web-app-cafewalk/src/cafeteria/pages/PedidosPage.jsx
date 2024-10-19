@@ -1,9 +1,9 @@
-import React from 'react'
+
 
 export const PedidosPage = () => {
   return (
     <>
-        <h1>Pagina para los pedidos</h1>
+        <div><h1>Pagina de Pedidos especiales</h1></div>
     </>
   )
 }
