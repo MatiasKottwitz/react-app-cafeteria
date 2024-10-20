@@ -62,3 +62,64 @@ export const aboutData = [{
     btnData: 'Obten Tu Cafe',
     btnClass: 'btn-acerca'
 }]
+
+export const productCards = [{
+    id: '1',
+    productImage: './images/sandwich.png',
+    productAlt: 'Sanwich Image',
+    productName: 'Sandwich',
+    productDescription: 'Tostado con jamon y verduras',
+    productPrice: '$100',
+    btnClass: 'menu-buy-button',
+    btnName: 'Comprar'
+},
+{
+    id: '2',
+    productImage: './images/leche-caliente.png',
+    productAlt: 'Leche Caliente Image',
+    productName: 'Leche Caliente',
+    productDescription: 'Leche caliente con o sin chocolate',
+    productPrice: '$200',
+    btnClass: 'menu-buy-button',
+    btnName: 'Comprar'
+},
+{
+    id: '3',
+    productImage: './images/cafe-frio-helado.png',
+    productAlt: 'Cafe Frio Image',
+    productName: 'Cafe Helado',
+    productDescription: 'Cafe con Helado de Vainilla',
+    productPrice: '$500',
+    btnClass: 'menu-buy-button',
+    btnName: 'Comprar'
+},
+{
+    id: '4',
+    productImage: './images/capuchino.png',
+    productAlt: 'Capuchino Image',
+    productName: 'Capuccino',
+    productDescription: 'Capuccino caliente',
+    productPrice: '$800',
+    btnClass: 'menu-buy-button',
+    btnName: 'Comprar'
+},
+{
+    id: '5',
+    productImage: './images/mocacino.png',
+    productAlt: 'Mocacino Image',
+    productName: 'Moccacinno',
+    productDescription: 'Caliente listo para llevar',
+    productPrice: '$900',
+    btnClass: 'menu-buy-button',
+    btnName: 'Comprar'
+},
+{
+    id: '6',
+    productImage: './images/waffle-helado.png',
+    productAlt: 'Waffle Image',
+    productName: 'Waffle Helado',
+    productDescription: 'Con Helado de Vainilla',
+    productPrice: '$1000',
+    btnClass: 'menu-buy-button',
+    btnName: 'Comprar' 
+}]
