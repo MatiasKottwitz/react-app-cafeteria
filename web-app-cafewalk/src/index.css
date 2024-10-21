@@ -896,6 +896,14 @@ p{
 }
 
 /* ***************************************************< Fin Seccion de Menu*/
+.slide-container{
+  margin: 5%;
+  padding-bottom: 5%;
+}
+.frame{
+  border-radius: 2%;
+  margin-top: 2%;
+}
 /* Seccion Pedidos */
 .pedidos{
   display: flex;
