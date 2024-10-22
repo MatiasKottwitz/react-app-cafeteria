@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
-import Slideshow from './../containers/Slideshow'
-import { PopularContainer,BannerContainer, ServicesContainer, AboutContainer, MenuContainer, ContactContainer } from "../containers";
-import {bannerData, popularMenuData, servicesData,aboutData, productCards} from './../data/data'
+import { PopularContainer,BannerContainer, ServicesContainer, AboutContainer, MenuContainer, ContactContainer, GalleryContainer } from "../containers";
+import {bannerData, popularMenuData, servicesData,aboutData, productCards, galleryImages} from './../data/data'
 
 export const HomePage = () => {
   return (
@@ -11,7 +10,7 @@ export const HomePage = () => {
         <ServicesContainer servicesData={servicesData} />
         <AboutContainer aboutData={aboutData}/>
         <MenuContainer productCards={productCards}/>
-        {/* <Slideshow /> */}
+        <GalleryContainer galleryImages={galleryImages} />
         <ContactContainer />
 
     </>

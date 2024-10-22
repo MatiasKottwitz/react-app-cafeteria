@@ -1,6 +1,6 @@
 /* Contacto */
 #contacto{
-    width: 100%;
+    width: 92%;
     min-height: 100vh;
     display: flex;
     flex-wrap: nowrap;
@@ -14,6 +14,9 @@
     align-content: center;
     flex-direction: column;
     justify-content: space-around;
+    margin-left: 4%;
+    margin-right: 4%;
+    
 }
 .contact-title{
     font-family: 'Poppins';
@@ -102,7 +105,6 @@ h1, p {
     border-color: #2F2105;
     color: #F4AE26;
     border-radius: 33px;
-    min-width: 300px;
   }
   .input-form[type="reset"] {
     display: block;
@@ -114,5 +116,4 @@ h1, p {
     border-color: #2F2105;
     color: #F4AE26;
     border-radius: 33px;
-    min-width: 300px;
   }

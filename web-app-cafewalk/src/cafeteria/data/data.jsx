@@ -123,3 +123,36 @@ export const productCards = [{
     btnClass: 'menu-buy-button',
     btnName: 'Comprar' 
 }]
+
+export const galleryImages =[
+{
+    id: '1',
+    imageUrl: './images/Local1.png',
+    imageAlt: 'Local 1'
+},
+{
+    id: '2',
+    imageUrl: './images/Local2.png',
+    imageAlt: 'Local 2'
+},
+{
+    id: '3',
+    imageUrl: './images/Local3.png',
+    imageAlt: 'Local 3'
+},
+{
+    id: '4',
+    imageUrl: './images/Local4.png',
+    imageAlt: 'Local 4'
+},
+{
+    id: '5',
+    imageUrl: './images/Local5.png',
+    imageAlt: 'Local 5'
+},
+{
+    id: '6',
+    imageUrl: './images/Local6.png',
+    imageAlt: 'Local 6'
+}
+]
