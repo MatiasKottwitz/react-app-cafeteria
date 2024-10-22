@@ -1,4 +1,4 @@
-// import './../../../public/css/popular.css'
+import './../../../public/css/popular.css'
 import PopularCards from "./../components/PopularCards"
 
 export const PopularContainer = ({popularMenuData}) => {

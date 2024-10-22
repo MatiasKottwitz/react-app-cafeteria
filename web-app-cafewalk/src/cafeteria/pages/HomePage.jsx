@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import Slideshow from './../containers/Slideshow'
-import { PopularContainer,BannerContainer, ServicesContainer, AboutContainer, MenuContainer } from "../containers";
+import { PopularContainer,BannerContainer, ServicesContainer, AboutContainer, MenuContainer, ContactContainer } from "../containers";
 import {bannerData, popularMenuData, servicesData,aboutData, productCards} from './../data/data'
 
 export const HomePage = () => {
@@ -11,7 +11,9 @@ export const HomePage = () => {
         <ServicesContainer servicesData={servicesData} />
         <AboutContainer aboutData={aboutData}/>
         <MenuContainer productCards={productCards}/>
-        <Slideshow />
+        {/* <Slideshow /> */}
+        <ContactContainer />
+
     </>
   )
 }

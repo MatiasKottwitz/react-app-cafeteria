@@ -1,4 +1,4 @@
-// import './../../../public/css/popular.css'
+import './../../../public/css/popular.css'
 
 export const PopularCards = ({id, ProductImage, imageAlt, productPopular, pricePopular}) => {
   return (
