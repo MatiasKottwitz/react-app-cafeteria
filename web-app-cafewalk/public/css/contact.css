@@ -49,9 +49,11 @@ h1, p {
 }
 
 .div-form {
-    display: block !important;
+    display: block ;
     margin: 1rem ;   
 }
+
+
 
 .input-form, select, textarea {
     margin: 10px 0 0 0;

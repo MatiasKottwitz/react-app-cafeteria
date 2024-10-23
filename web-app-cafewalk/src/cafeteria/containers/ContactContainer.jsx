@@ -5,59 +5,72 @@ import './../../../public/css/contact.css'
 export const ContactContainer = () => {
 
     const [formState, setFormState] = useState({
-        nombre:'matias',
-        apellido:'kottwitz',
-        email: 'kottvitz@matias.com',
-        edad: '25',
-        telefono:'3764119400',
-        dropdown: 2,
-        recommend: 'Definitivamente',
-        improved: '',
-        comments: 'Soy leru leru!'
+        nombre:'',
+        apellido:'',
+        email: '',
+        edad: '',
+        telefono:'',
+        dropdown:'',
+        comments: ''
     });
 
-    const {nombre, apellido, email, telefono,edad, dropdown, recommend, improved, comments } = formState;
+    const {nombre, apellido, email, telefono,edad, dropdown, comments } = formState;
 
     const onInputChange = ({target}) => {
-        const {name, value, dropdown, improved, apellido} = target;
+        const {name, value} = target;
 
-        
         setFormState ({
             ...formState,
             [name]:value
         });
+    }
 
-        console.table({name, value});
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.table(formState);
     }
 
     useEffect(() => {
-        // console.log("Funcion Actual");
+        console.table(formState);
     }, [formState]);
 
+    const resetForm = (e) => {
+        e.preventDefault();
+        setFormState({
+            nombre:'',
+            apellido:'',
+            email: '',
+            edad: '',
+            telefono:'',
+            dropdown:'',
+            comments: ''
+        });
+        console.log("Limpiando Formulario");
+    }
     return (
     <div id="contacto">
             <h3 className="contact-title" >Contacta con nosotros</h3>
             <div className="form-contact">
-                <form action="" className='form-control'>
+                <form action="" onSubmit={handleSubmit} className='form-control'>
 
-                    <div className='div-form' for="nombre" >Nombre:
+                    <div className='div-form' htmlFor="nombre" >Nombre:
                         <input className='input-form' type="text" name="nombre" required placeholder="Ingrese su Nombre"  value={nombre} onChange={onInputChange}/></div>
-                    <div className='div-form' for="apellido">Apellido:
+                    <div className='div-form' htmlFor="apellido">Apellido:
                         <input className='input-form' type="text" name='apellido' required placeholder="Ingrese su Apellido" value={apellido} onChange={onInputChange}  /></div>
-                    <div className='div-form' for="email" >Email:
+                    <div className='div-form' htmlFor="email" >Email:
                         <input className='input-form' type="email" name="email" required placeholder="email@email.com" value={email} onChange={onInputChange} /></div>
-                    <div className='div-form'  for="telefono" >Telefono:
+                    <div className='div-form' htmlFor="telefono" >Telefono:
                         <input className='input-form' type="text" name='telefono' required placeholder="+54" value={telefono} onChange={onInputChange} /></div>
-                    <div className='div-form'  for="edad" >Edad:
+                    <div className='div-form' htmlFor="edad" >Edad:
                         <input className='input-form' type="number" name="edad" min="18" max="50" placeholder="18" value={edad} onChange={onInputChange} /></div>
 
 
                     <div htmlFor="dropdown" className='div-form' >¿Qué opción describe mejor su función actual?
-                        <select name="dropdown" id="dropdown" onChange={onInputChange}>
-                            <option value={dropdown}>Selecciona una opcion</option>
-                            <option value={dropdown}>Estudiante</option>
-                            <option value={dropdown}>Trabajo de tiempo completo</option>
-                            <option value={dropdown}>Trabajo de medio tiempo</option>
+                        <select name="dropdown" id="dropdown" value={dropdown}onChange={onInputChange}>
+                            <option value='Select'>Selecciona una opcion</option>
+                            <option value='Estudiante'>Estudiante</option>
+                            <option value='Tiempo Completo'>Trabajo de tiempo completo</option>
+                            <option value='Medio Tiempo'>Trabajo de medio tiempo</option>
                         </select>
                     </div>
 
@@ -84,12 +97,12 @@ export const ContactContainer = () => {
                         </div>
                     </div> */}
 
-                    <div for="comments" className='div-form' >Cuentanos mas acerca de ti:
-                        <textarea name="comments" id="comments" cols="30" rows="3" value={comments} placeholder="Aprovecha para contarnos acerca de ti y tus dudas." ></textarea>
+                    <div htmlFor="comments" className='div-form' >Cuentanos mas acerca de ti:
+                        <textarea name="comments" id="comments" cols="30" rows="3" value={comments} onChange={onInputChange}  placeholder="Aprovecha para contarnos acerca de ti y tus dudas." ></textarea>
                     </div>
 
                     <input className='input-form' type="submit" id="submit"/>
-                    <input className='input-form' type="reset" id="reset"/>
+                    <input className='input-form' type="reset" id="reset"  onClick={resetForm} />
 
                 </form>
             </div>
