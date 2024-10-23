@@ -1,12 +1,12 @@
-import popularStyle from'./../../../public/css/popular.module.css'
+import './../../../public/css/popular.css'
 import PopularCards from "./../components/PopularCards"
 
 export const PopularContainer = ({popularMenuData}) => {
   return (
-    <div id={popularStyle.popular_section} >
+    <div id="popular-section" >
       <h2>Populares Hoy</h2>
-      <div className={popularStyle.popular_container_background}>
-      <div className={popularStyle.popular_cards}>
+      <div className="popular-container-background">
+      <div className="popular-cards">
         {popularMenuData.map (popular => (
           <PopularCards key={popular.id} {...popular} />
         ))}
