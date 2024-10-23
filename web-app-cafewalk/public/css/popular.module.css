@@ -1,17 +1,17 @@
 
-#popular-section{
+#popular_section{
     margin-top: 3rem;
     padding-left: 41px;
     
   }
-  .popular-container{
+  .popular_container{
     position: absolute;
     width: 89%;
     height: 207px;
     top: 518px;
     margin: 5%;
   }
-  .popular-container h2{
+  .popular_container h2{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -22,7 +22,7 @@
     color: #000000;
   }
   
-  .popular-container-background{
+  .popular_container_background{
     position: absolute;
     width: 94%;
     height: 220px;
@@ -32,7 +32,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 64px;
   }
-  .popular-cards {
+  .popular_cards {
     position: relative;
     top: -11rem;
     display: flex;
@@ -43,7 +43,7 @@
     width: 100%;
   }
   
-  .card-popular {
+  .card_popular {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -56,23 +56,23 @@
     transition: transform .50s ease;
     cursor: pointer;
   }
-  .card-popular:hover{
+  .card_popular:hover{
     transition: transform .50s ease;
     transform:scale(1.03);
   }
   
-  .card-popular img {
+  .card_popular img {
     width: 100%;
     height: auto;
     object-fit: cover;
   }
   
-  .card-popular-content {
+  .card_popular_content {
     padding: 10px;
     text-align: center;
   }
   
-  .card-popular-title {
+  .card_popular_title {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,7 +81,7 @@
     font-weight: bold;
   }
   
-  .card-popular-buttons {
+  .card_popular_buttons {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -90,16 +90,16 @@
     gap: 5px;
   }
   
-  .card-popular-buttons label {
+  .card_popular_buttons .label {
     margin-right: 10px;
     font-size: 14px;
   }
   
-  .card-popular-buttons input[type="radio"] {
+  .card_popular_buttons input[type="radio"] {
     margin-right: 5px;
   }
   
-  .card-popular-buttons button {
+  .card_popular_buttons button {
     padding: 5px 10px;
     background-color: #FF902A;
     color: #fff;
@@ -112,11 +112,11 @@
     
   }
   
-  .card-popular-buttons button:hover {
+  .card_popular_buttons button:hover {
     background-color: #FF902A;
     scale: 1.05;
   }
-  .card-popular-buttons button:active{
+  .card_popular_buttons button:active{
     scale: 0.95;
     background-color: #a35e1d;
   }
@@ -134,7 +134,7 @@
     font-family: "Poppins";
     color: var(--blue);
   }
-  .radio-block {
+  .radio_block {
     position: relative;
     display: flex;
     /* min-width: 280px; */
@@ -154,7 +154,7 @@
     transition: transform 0.2s;
     background-color: var(--blue);
   }
-  label {
+  .label {
     position: relative;
     z-index: 100;
     width: 50%;
@@ -164,11 +164,11 @@
     cursor: pointer;
   }
   
-  input[type=radio]:checked + label {
+  input[type=radio]:checked + .label {
     color: #FFF;
   }
   
-  input[type=radio]:checked + .off-label + .selected {
+  input[type=radio]:checked + .off_label + .selected {
     transform: translateX(100%);
   }
   
@@ -186,7 +186,7 @@
   }
   
   @media (max-width: 768px){
-    .radio-block{
+    .radio_block{
         display: flex;
         width: 122px;
         height: 51px;
@@ -196,15 +196,15 @@
         margin-right: auto;
     }
   
-    .card-popular-buttons label {
+    .card_popular-buttons .label {
         margin-right: 14px;
         font-size: 11px;
         font-weight: bold;
     }
-    label{
+    .label{
         width: 48%;
     }
-    .card-popular-buttons button{
+    .card_popular_buttons button{
         width: 119px;
         height: 2.6rem;
         font-size: 2rem;
@@ -216,7 +216,7 @@
   /* Fin de los Botones Radio */
   
   @media (max-width: 768px) {
-    .popular-cards {
+    .popular_cards {
         position: relative;
         top: -5rem;
         display: flex;
@@ -229,16 +229,16 @@
         margin-left: -8px;
     }
   
-    .card-popular {
+    .card_popular {
         flex: 0 0 129px;
         height: 234px;
     }
   
-    .card-popular-content{
+    .card_popular_content{
         padding: 1px;
     }
   
-    .card-popular-title{
+    .card_popular_title{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -247,7 +247,7 @@
         font-weight: bold;
     }
   
-    .card-popular-buttons{
+    .card_popular_buttons{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -258,7 +258,7 @@
         margin-top: -5px;
     }
   
-    .popular-container-background {
+    .popular_container_background {
         margin-top: 77px;
         height: 188px;
         border-radius: 40px;
@@ -266,7 +266,7 @@
         margin-left: -35px;
     }
   
-    #popular-section {
+    #popular_section {
         margin-top: 1rem;
         padding-left: 41px;
         font-size: 12px;

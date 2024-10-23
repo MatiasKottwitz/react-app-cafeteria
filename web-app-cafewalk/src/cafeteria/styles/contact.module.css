@@ -18,7 +18,7 @@
     margin-right: 4%;
     
 }
-.contact-title{
+.contact_title{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -37,7 +37,7 @@ h1, p {
     text-align: center;
 }
 
-.form-control{
+.form_control{
     width: 60vw;
     max-width: 500px;
     min-width: 300px;
@@ -48,7 +48,7 @@ h1, p {
     background-color: #FFFFFF;
 }
 
-.div-form {
+.label {
     display: block !important;
     margin: 1rem ;   
 }

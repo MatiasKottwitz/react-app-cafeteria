@@ -1,25 +1,25 @@
 import { useEffect, useState } from 'react';
 
-import './../../../public/css/contact.css'
+import styles from './../styles/contact.module.css'
 
 export const ContactContainer = () => {
 
     const [formState, setFormState] = useState({
-        nombre:'matias',
-        apellido:'kottwitz',
-        email: 'kottvitz@matias.com',
-        edad: '25',
-        telefono:'3764119400',
-        dropdown: 2,
-        recommend: 'Definitivamente',
+        nombre:'',
+        apellido:'',
+        email: '',
+        edad: '',
+        telefono:'',
+        dropdown: '',
+        recommend: '',
         improved: '',
-        comments: 'Soy leru leru!'
+        comments: ''
     });
 
     const {nombre, apellido, email, telefono,edad, dropdown, recommend, improved, comments } = formState;
 
     const onInputChange = ({target}) => {
-        const {name, value, dropdown, improved, apellido} = target;
+        const {name, value} = target;
 
         
         setFormState ({
@@ -35,31 +35,31 @@ export const ContactContainer = () => {
     }, [formState]);
 
     return (
-    <div id="contacto">
-            <h3 className="contact-title" >Contacta con nosotros</h3>
+    <div id={styles.contacto}>
+            <h3 className={styles.contact_title} >Contacta con nosotros</h3>
             <div className="form-contact">
-                <form action="" className='form-control'>
+                <form action="" className={styles.form_control}>
 
-                    <div className='div-form' for="nombre" >Nombre:
-                        <input className='input-form' type="text" name="nombre" required placeholder="Ingrese su Nombre"  value={nombre} onChange={onInputChange}/></div>
-                    <div className='div-form' for="apellido">Apellido:
-                        <input className='input-form' type="text" name='apellido' required placeholder="Ingrese su Apellido" value={apellido} onChange={onInputChange}  /></div>
-                    <div className='div-form' for="email" >Email:
-                        <input className='input-form' type="email" name="email" required placeholder="email@email.com" value={email} onChange={onInputChange} /></div>
-                    <div className='div-form'  for="telefono" >Telefono:
-                        <input className='input-form' type="text" name='telefono' required placeholder="+54" value={telefono} onChange={onInputChange} /></div>
-                    <div className='div-form'  for="edad" >Edad:
-                        <input className='input-form' type="number" name="edad" min="18" max="50" placeholder="18" value={edad} onChange={onInputChange} /></div>
+                    <label className={styles.label} for="nombre" >Nombre:
+                        <input className='input-form' type="text" name="nombre" required placeholder="Ingrese su Nombre"  value={nombre} onChange={onInputChange}/></label>
+                    <label className={styles.label} for="apellido">Apellido:
+                        <input className='input-form' type="text" name='apellido' required placeholder="Ingrese su Apellido" value={apellido} onChange={onInputChange}  /></label>
+                    <label className={styles.label} for="email" >Email:
+                        <input className='input-form' type="email" name="email" required placeholder="email@email.com" value={email} onChange={onInputChange} /></label>
+                    <label className={styles.label} for="telefono" >Telefono:
+                        <input className='input-form' type="text" name='telefono' required placeholder="+54" value={telefono} onChange={onInputChange} /></label>
+                    <label className={styles.label}  for="edad" >Edad:
+                        <input className='input-form' type="number" name="edad" min="18" max="50" placeholder="18" value={edad} onChange={onInputChange} /></label>
 
 
-                    <div htmlFor="dropdown" className='div-form' >¿Qué opción describe mejor su función actual?
+                    <label htmlFor="dropdown" className='div-form' >¿Qué opción describe mejor su función actual?
                         <select name="dropdown" id="dropdown" onChange={onInputChange}>
                             <option value={dropdown}>Selecciona una opcion</option>
                             <option value={dropdown}>Estudiante</option>
                             <option value={dropdown}>Trabajo de tiempo completo</option>
                             <option value={dropdown}>Trabajo de medio tiempo</option>
                         </select>
-                    </div>
+                    </label>
 
                     {/* <div for="recommend" className='div-form' >¿Recomendarias a Caffe Walk?</div>
                         <div for="recommend" className='div-form' >
