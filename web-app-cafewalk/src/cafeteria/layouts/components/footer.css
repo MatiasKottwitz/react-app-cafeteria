@@ -22,10 +22,20 @@ footer {
 .footer-izq p {
     margin: 0;
     font-size: 14px;
+    gap: 7px;
+}
+
+.footer-der p {
+    margin: 0;
+    font-size: 14px;
+}
+.footer-centro p{
+    margin: 0;
+    font-size: 14px;
 }
 
 .footer-centro img {
-    width: 40px;
+    width: 26px;
     height: auto;
     margin: 0 10px;
 }

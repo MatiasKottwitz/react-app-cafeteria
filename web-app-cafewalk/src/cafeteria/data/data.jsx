@@ -156,3 +156,4 @@ export const galleryImages =[
     imageAlt: 'Local 6'
 }
 ]
+
