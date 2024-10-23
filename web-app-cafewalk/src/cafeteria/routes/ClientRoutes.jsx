@@ -1,4 +1,4 @@
-import { Header } from "../layouts/components"
+import { Header, Footer} from "../layouts/components"
 import { Routes, Route, Navigate } from "react-router-dom"
 import { EnviosPage, HomePage, ProductsPage, PedidosPage } from "../pages"
 export const ClientRoutes = () => {
@@ -14,6 +14,8 @@ export const ClientRoutes = () => {
             <Route path="envios" element={<EnviosPage/>}/>
             <Route path="pedidos" element={<PedidosPage/>}/>
         </Routes>
+
+        <Footer/>
     </>
   )
 }

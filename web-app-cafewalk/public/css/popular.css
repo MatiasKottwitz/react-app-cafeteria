@@ -58,7 +58,7 @@
   }
   .card-popular:hover{
     transition: transform .50s ease;
-    transform:scale(1.03);
+    transform:scale(1.01);
   }
   
   .card-popular img {

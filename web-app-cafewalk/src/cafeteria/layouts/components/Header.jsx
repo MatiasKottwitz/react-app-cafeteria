@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import { useState } from 'react'
 import PropTypes from 'prop-types'
 
 
@@ -6,7 +7,14 @@ import logo from '../../../assets/logoCafe.svg'
 import cart from '../../../assets/logoCart.svg'
 
 export const Header = ({imgLogo, imgCart, logoAlt}) => {
-  return (
+  
+    const [isOpen, setIsOpen] = useState(false);
+
+    const handleMenuClick = () => {
+        setIsOpen(!isOpen);
+      };
+  
+    return (
     <header className="my-header" >
     <div className="nav-container">
         <i className="logos">
@@ -23,13 +31,12 @@ export const Header = ({imgLogo, imgCart, logoAlt}) => {
             <li className="my-li"><a href="#contacto">Contacto</a></li> */}
         </ul>
         <NavLink className='pedido' to="/pedidos">Pedidos Especiales</NavLink>
-            <i className="cart"><img src={imgCart} alt=""/>
-            </i>
-            <div className="menu">
-                <i className="fa-solid fa-bars"></i>
+        <i className="cart"><img src={imgCart} alt=""/></i>
+            <div className="menu" onClick={handleMenuClick} >
+                <i className={isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'}></i>
             </div>
     </div>
-   <div className="menu-resp">
+   <div className={`menu-resp ${isOpen ? 'open' : ''}`}>
         <li className="my-li" ><a href="#home" className="my-a" >Inicio</a></li>
         <li className="my-li" ><a href="#servicios" className="my-a" >Servicios</a></li>
         <li className="my-li" ><a href="#acerca" className="my-a" >Acerca de</a></li>
