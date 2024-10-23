@@ -1,0 +1,121 @@
+/* Contacto */
+#contacto{
+    width: 92%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+    top: 11px;
+    background-image: url(images/form-bg.jpg);
+    background-size: cover;
+    border-radius: 12px;
+    align-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 4%;
+    margin-right: 4%;
+    
+}
+.contact-title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #FFFFFF;
+
+}
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+
+.form-control{
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 0.5em;
+    padding-top: 1px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+.div-form {
+    display: block ;
+    margin: 1rem ;   
+}
+
+
+
+.input-form, select, textarea {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+    
+}
+.input-form, textarea {
+    border: 1px solid #0a0a23;
+    border-radius: 5px;
+    color: black;
+    
+  }
+
+  .inline {
+    width: unset ;
+    margin: 0 0.5em 0 0  ;
+    vertical-align: middle ;
+  }
+  .input-form[type=radio] {
+    position: relative;
+    width: 17px;
+    height: 1px;
+    margin: 6px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    border: black;
+    clip-path: inset(-3px);
+    white-space: nowrap;
+  }
+  .input-form[type=checkbox] {
+    position: relative;
+    width: 17px;
+    height: 1px;
+    margin: 6px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    border: black;
+    clip-path: inset(-3px);
+    white-space: nowrap;
+  }
+  .input-form[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #2F2105;;
+    border-color: #2F2105;
+    color: #F4AE26;
+    border-radius: 33px;
+  }
+  .input-form[type="reset"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color:#2F2105;
+    border-color: #2F2105;
+    color: #F4AE26;
+    border-radius: 33px;
+  }
